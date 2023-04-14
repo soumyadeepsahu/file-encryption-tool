@@ -1,2 +1,2 @@
 # file-encryption-tool
-This is a simple file encryption tool built in Python using the cryptography library and a Tkinter GUI. 
+This is a Python script with a Tkinter UI for AES encryption of files with a password. The tool uses PBKDF2HMAC to derive a key from the password, and generates a random salt and IV for each file. The encrypted files are saved with a ".enc" extension. The decryption function takes a file path and password as input, and removes PKCS7 padding from the decrypted data before saving the result to a new file. The UI allows users to browse for files, enter a password, and initiate the appropriate operation with a button. Overall, this tool provides a secure and user-friendly way to protect files with AES encryption.
